@@ -95,7 +95,7 @@
 
   function attente(p, maintenant) {
     var ms = p.heure.getTime() - maintenant.getTime();
-    if (ms < 60000) return "À l'approche";
+    if (ms < 60000) return "Imminent";
     var min = Math.floor(ms / 60000);
     return min >= 60 ? "à " + hhmm(p.heure) : min + " min";
   }
